@@ -1,0 +1,45 @@
+body{
+  background: linear-gradient(#181246,#ab9999);
+  background-repeat: no-repeat;
+}
+
+h1{
+  text-align: center;
+  margin-top: 30px;
+  font-size: 40px;
+  font-family: sans-serif;
+  color: #fff;
+}
+.gallery{
+  height: 80%;
+  width: 100%;
+  display: flex;
+  margin: 5% auto 0;
+  box-sizing: border-box;
+}
+.images-box{
+  margin: 0 1%;
+  flex-grow: 1;
+  flex-basis: 0;
+  transition: .5s;
+
+}
+.images-box img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .5s;
+}
+.images-box:hover{
+  flex-basis: 50%;
+
+}
+.active{
+  flex-basis: 50%;
+}
+.gallery:hover .active{
+  flex-basis: 0;
+}
+.images-box:nth-child(1):hover{
+  flex-basis: 50%;
+}
